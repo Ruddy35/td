@@ -480,6 +480,7 @@ void UpdatesManager::get_difference(const char *source) {
 }
 
 void UpdatesManager::run_get_difference(bool is_recursive, const char *source) {
+  return;
   CHECK(get_pts() != -1);
   CHECK(td_->auth_manager_->is_authorized());
   CHECK(!running_get_difference_);
